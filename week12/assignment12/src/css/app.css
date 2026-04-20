@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #566253ff;
+  background-color: rgb(251, 249, 246);
+}
+
+/* GRID LAYOUT
+   This creates a responsive grid that automatically adjusts the number of columns
+   based on screen size, keeping each item at a reasonable width. */
+.project-grid {
+  display: grid; /* Use CSS Grid layout */
+  /* Create responsive columns:
+     - auto-fill: fit as many columns as possible
+     - minmax(200px, 1fr): each column is at least 200px, but can grow */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem; /* Space between grid items (rows and columns) */
+}
+/* CARD DESIGN
+   Each book is displayed as a card with padding, a border, and a shadow
+   to visually separate it from other items. */
+.project-card {
+  border: 1px solid #ddd; /* Light gray border around each card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Space inside the card */
+
+  /* Subtle shadow to lift the card visually */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE HANDLING
+   Ensures images fit nicely inside the card and match the rounded style. */
+.project-card img,
+.project-card video {
+  max-width: 100%;
+  border-radius: 4px;
+}
