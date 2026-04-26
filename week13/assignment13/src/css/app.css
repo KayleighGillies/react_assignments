@@ -1,0 +1,148 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #566253ff;
+  background-color: rgb(251, 249, 246);
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* GRID LAYOUT
+   This creates a responsive grid that automatically adjusts the number of columns
+   based on screen size, keeping each item at a reasonable width. */
+.project-grid {
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(3, 1fr); /* always 3 equal columns */
+  gap: 1.5rem; /* Space between grid items (rows and columns) */
+  padding: 0 6rem; /* adds space on left and right sides */
+}
+/* CARD DESIGN
+   Each project is displayed as a card with padding, a border, and a shadow
+   to visually separate it from other items. */
+.project-card {
+  border: 1px solid #ddd; /* Light gray border around each card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Space inside the card */
+
+  /* Subtle shadow to lift the card visually */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.project-card:hover {
+  transform: translateY(-3px); /* nudge the card upward */
+}
+
+.project-card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #566253ff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.project-card__link:hover {
+  color: #f2d649;
+}
+
+.project-card__button {
+  margin: 2rem;
+  padding: 0.4rem 1rem;
+  color: #2c2c2c;
+  border: 1px solid #ddd; 
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.project-card__button:hover {
+  background-color: #f2d649;
+  color: #1a1a1a;
+}
+/* =========================
+   NAVIGATION 
+    Why: Separate styles for the navbar to keep things organized
+   ========================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #f2d649;
+  margin: 0;
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f2d649;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #f2d649;
+}
+
+/* =========================
+   FOOTER
+    Why: Separate styles for the footer to keep things organized
+   ========================= */
+
+.footer {
+  color: #f2bf49;
+  text-align: right;
+  padding: 1rem 4rem;
+  background-color: #1a1a1a;
+  border-top: 2px solid #f2d649;
+  margin: 0;
+}
+
+/* IMAGE HANDLING
+   Ensures images fit nicely inside the card and match the rounded style. */
+.project-card img,
+.project-card video {
+  max-width: 100%;
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
