@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard.jsx";
-import { projects} from "../data/projectData.js";
-function ProjectList() {
+
+function ProjectList({projects}) {
   return (
     <div className="project-grid">
       {projects.map((project) => (
