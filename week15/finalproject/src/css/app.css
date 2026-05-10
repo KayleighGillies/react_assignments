@@ -1,0 +1,352 @@
+#root {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home {
+  flex: 1; /* Allows the home page to grow and fill available space */
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+}
+
+.home canvas {
+  display: block;
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ── Artist grid ──────────────────────────────────────────────
+   Responsive grid that automatically creates as many columns
+   as will fit, each at least 250px wide                      */
+.artist-grid {
+  columns: 3; /* Fallback for older browsers */
+  column-gap: 3rem; /* space between columns */
+  margin-top: 1rem; /* space above the grid */
+  padding: 2rem 4rem;
+}
+
+/* ── Artist card ──────────────────────────────────────────────
+   Individual card container. Uses flexbox so inner content
+   stacks vertically and the action buttons can be pushed
+   to the bottom with margin-top: auto on .artist-actions      */
+.artist-card {
+  break-inside: avoid;  /* Prevents cards from breaking across columns */
+  border: 0.1rem solid #585050;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 3rem; /* space below each card */
+}
+
+/* ── Card hover effect ──────────────────────────────────────
+   Subtle lift on hover to signal interactivity              */
+.artist-card:hover {
+  transform: translateY(-3px); /* nudge the card upward */
+}
+/* =========================
+   ELEMENTS (BEM)
+   Why: Scoped styles prevent conflicts and improve readability
+   ========================= */
+
+/* Title of the artist */
+.artist-card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font: Helvetica, Arial, sans-serif; /* Clean, modern font */
+  color: #f2d649; /* Highlight color */
+}
+
+/* Author text */
+.artist-card__author {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0; /* Softer contrast */
+}
+
+.artist-card__portrait {
+  object-fit: cover; /* fill the box, crop the edges */
+  object-position: top; /* keep the top of the image visible */
+  border-radius: 0.5rem;
+  margin: 1rem auto; /* Center the portrait and add vertical spacing */
+  width: 200px; /* Fixed width for portraits */
+  height: 200px; /* Fixed height for portraits */
+  border-radius: 100px; /* Make the portrait circular */
+}
+
+/* Book cover image */
+.artist-card__image {
+  width: 100%; /* Makes image responsive */
+  height: auto;
+  object-fit: cover; /* fill the box, crop the edges */
+  object-position: top; /* keep the top of the image visible */
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Click feedback (small interaction detail) */
+.artist-card__image:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+/* Description text */
+.artist-card__content {
+  font-size: 0.9rem;
+  margin: 0.5rem 0; /* Vertical spacing */
+  line-height: 1.4; /* Improves readability */
+  text-align: left; /* Better for paragraphs */
+  text-indent: 2em; /* Optional first-line indent */
+}
+.artist-card__button {
+  margin: 0.5rem;; /* Pushes button to the bottom of the card */
+  padding: 0.3rem;
+  background-color: white;
+  color: #4d4d4d;
+  border: #4d4d4d solid 0.05rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.artist-card__button:hover {
+  border: none;
+  background-color: #f2d649;
+  color: white;
+  font-weight: 600;
+}
+
+.artist-card__name-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 4px 0 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f2d649;
+}
+
+.artist-card__name-button:hover {
+  opacity: 0.8;
+}
+
+.artist-card__portrait-panel {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom: 0.1rem solid #585050;
+}
+
+.artist-card__show-button {
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: none;
+  border-top: 0.1rem solid #585050;
+  padding: 8px 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #f2d649;
+  transition: color 0.2s ease;
+}
+
+.artist-card__show-button:hover {
+  color: #ffffff;
+}
+
+.artist-card__bio p {
+  margin: 0 0 8px; /* Space between paragraphs */
+}
+
+.artist-card__chevron {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  transition: transform 0.2s ease;
+}
+/* Optional link (e.g., “Learn more”) */
+.artist-card__url {
+  display: block;
+  margin: 0.5rem auto 0; /* Centers and spaces link */
+  color: #f2d649;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Hover state for link */
+.artist-card__url:hover {
+  color: #535bf2;
+  transition: color 0.2s ease;
+}
+
+/* =========================
+   NAVIGATION 
+    Why: Separate styles for the navbar to keep things organized
+   ========================= */
+
+.navbar {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #f2d649;
+
+
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f2d649;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #f2d649;
+}
+
+/* =========================
+  ABOUT PAGE 
+    Why: Separate styles for the pages to keep things organized
+   ========================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  column-gap: 0.25rem; /* Space between columns */ 
+  align-items: start; /* Align items to the top of their grid cells */
+  margin-top: 1rem; /* Space above the grid */
+  padding: 2rem 4rem;
+  background-color: white;
+  color: #333 ;
+
+}
+
+.about-project,
+.about-kayleigh {
+  border: 0.1rem solid #585050;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-project {
+  grid-column: 1/2;
+  font-size: 0.9rem;
+  margin: 1rem 2rem; /* Vertical spacing */
+  line-height: 1.4; /* Improves readability */
+  text-align: left; /* Better for paragraphs */
+  text-indent: 2em; /* Optional first-line indent */
+} 
+
+.about-kayleigh {
+  grid-column: 2/3;
+  font-size: 0.9rem;
+  margin: 1rem 2rem; /* Vertical spacing */
+  line-height: 1.4; /* Improves readability */
+  text-align: left; /* Better for paragraphs */
+  text-indent: 2em; /* Optional first-line indent */
+}
+
+.about-kayleigh__portrait {
+  object-fit: cover; /* fill the box, crop the edges */
+  object-position: top; /* keep the top of the image visible */
+  border-radius: 0.5rem;
+  margin: 1rem auto; /* Center the portrait and add vertical spacing */
+  border-radius: 100px; /* Make the portrait circular */
+  width: 300px; /* Fixed width for portraits */
+  height: 300px; /* Fixed height for portraits */
+}
+
+.about-project h1,
+.about-kayleigh__title {
+  color: #f2d649;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about-kayleigh__portrait-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 0.1rem solid #585050;
+  margin-bottom: 1rem;
+}
+
+.about-kayleigh p {
+  grid-column: 1 / span 2; /* Make paragraphs span both columns */
+  margin: 10px 0 0 10px; /* Space between paragraphs */
+  text-indent: 2em;
+}
+
+.footer {
+  color: #f2bf49;
+  text-align: right;
+  padding: 1rem 4rem;
+  background-color: #1a1a1a;
+  border-top: 2px solid #f2d649;
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   Why: Improve layout on smaller screens
+   ========================= */
+@media (max-width: 700px) {
+  .artist-grid {
+    columns: 2; /* Switch to single column */
+    column-gap: 1rem;
+    padding: 1rem 2rem;} 
+}
+
+@media (max-width: 420px) {
+  .artist-grid {
+    columns: 1; /* Switch to single column */
+  }
+  .artist-card {
+    padding: 0.75rem; /* Slightly tighter layout */
+  }
+}

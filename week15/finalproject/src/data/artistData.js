@@ -1,0 +1,200 @@
+export const artists = [
+{
+  id: 1, 
+  artist: "Abigail Deville",
+  portrait: "artists/aDeville.jpg",
+  image: "art/art_aDeville.jpeg",
+  url: "https://example.com/",
+  content: "Abigail DeVille makes art that looks like it came from a forgotten place. She fills rooms with broken objects, old newspapers, and things people threw away — and turns them into powerful statements about history, race, and who gets remembered. Walking into her installations can feel like stepping into another world that's asking you to pay attention."
+},
+{
+  id: 2, 
+  artist: "Amy Sherald",
+  portrait: "artists/aSherald.jpg",
+  image:  "art/art_aSherald.jpg",
+  url: "https://example.com/",
+  content: "Amy Sherald paints portraits of Black Americans in a way you've probably never seen before. She uses gray tones for skin instead of realistic colors, which makes her subjects look like they could be characters in a story — timeless and powerful. You might recognize her work because she painted the official portrait of Michelle Obama."
+},
+{
+  id: 3, 
+  artist: "Brian Jungen",
+  portrait: "artists/bJungen.jpg",
+  image:  "art/art_bJungen.jpg",
+  url: "https://example.com/",
+  content: "Brian Jungen is a Canadian artist of Dane-zaa First Nations heritage who takes everyday objects and completely transforms them. He's most famous for taking Nike Air Jordans apart and reassembling them into objects that look like Indigenous ceremonial masks. It makes you think twice about what things are worth, where they come from, and whose culture gets sold."
+},
+{
+  id: 4, 
+  artist: "Cai Guo-Qiang",
+  portrait: "artists/cGuoQiang.jpg",
+  image:  "art/art_cGuoQiang.jpeg",
+  url: "https://example.com/",
+  content: "Cai Guo-Qiang makes art with gunpowder and fireworks. Yes, really. He creates huge explosion events in the sky that last only minutes but leave people speechless. He also makes giant installations — like a life-size car that looks like it's flying. His work blends Chinese traditions with big questions about energy, nature, and human connection."
+},
+{
+  id: 5, 
+  artist: "Diana Al-Hadid",
+  portrait: "artists/dAlHadid.png",
+  image:  "art/art_dAlHadid.jpg",
+  url: "https://example.com/",
+content: "Diana Al-Hadid builds sculptures that look like they're melting or caught mid-collapse — like a dream frozen in time. She's inspired by ancient architecture, mythology, and science, and uses materials like plaster, steel, and foam to create structures that feel impossible. Her work asks you to slow down and wonder how something so delicate can hold itself together."
+},
+{
+  id: 6, 
+  artist: "Do Ho Suh",
+  portrait: "artists/dHoSuh.jpg",
+  image:  "art/art_dHoSuh.jpg",
+  url: "https://example.com/",
+content: "Do Ho Suh grew up in Korea and later moved to the United States, and that experience of feeling in-between two places shows up in everything he makes. He recreates entire rooms and apartments out of translucent colored fabric — you can see through the walls. His work is about memory, home, and what it feels like to carry a place with you wherever you go."},
+{
+  id: 7, 
+  artist: "El Anatsui",
+  portrait: "artists/eAnatsui.jpg",
+  image:  "art/art_eAnatsui.jpg",
+  url: "https://example.com/",
+content: "El Anatsui is a Ghanaian artist who makes enormous, shimmering works out of thousands of bottle caps and metal scraps — materials he collects from the ground in Nigeria. When they're hung on a wall, they ripple and flow like fabric or a landscape. His work is about Africa's history, trade, and the beauty that can come from things considered worthless."
+},
+{
+  id: 8, 
+  artist: "Jordan Casteel",
+  portrait: "artists/jCasteel.jpeg",
+  image:  "art/art_jCasteel.jpg",
+  url: "https://example.com/",
+content: "Jordan Casteel paints people from her own life and community — neighbors, friends, strangers she meets in New York City — in warm, vivid colors that make each person feel seen and celebrated. Her portraits feel personal and inviting, like a window into someone's real world. She wants viewers to feel a connection to people they might otherwise walk right past."},
+{
+  id: 9, 
+  artist: "Julie Mehretu",
+  portrait: "artists/jMehretu.png",
+  image:  "art/art_jMehretu.jpg",
+  url: "https://example.com/",
+content: "Julie Mehretu makes paintings that look like cities exploding into abstract shapes, lines, and marks. She layers architectural drawings underneath swirling gestures and colors, creating works that feel full of motion and energy. Her paintings are often enormous — big enough to fill an entire wall — and reward you the longer you look at them."},
+{
+  id: 10, 
+  artist: "Judith Scott",
+  portrait: "artists/jScott.jpg",
+  image:  "art/art_jScott.jpg",
+  url: "https://example.com/",
+content: "Judith Scott was a fiber artist who worked at Creative Growth Art Center in Oakland. She was deaf and had Down syndrome, and didn't start making art until she was in her forties — but when she did, something incredible happened. She wrapped found objects in layers and layers of colorful yarn and thread, creating mysterious cocoon-like sculptures. No one knew what was inside them until after she passed away. Her work is now in major museum collections around the world."},
+{
+  id: 11, 
+  artist: "Louise Bourgeois",
+  portrait: "artists/lBourgeois.jpg",
+  image:  "art/art_lBourgeois.jpg",
+  url: "https://example.com/",
+content: "Louise Bourgeois made art for almost her entire life — well into her nineties — and her work is some of the most emotional and fearless ever made. She is best known for her giant spider sculptures, called Maman, which can be found outside museums around the world. She said the spider represented her mother — strong, protective, and a skilled weaver. Her art explored memory, family, and big feelings that are hard to put into words."},
+{
+  id: 12, 
+  artist: "Louise Despont",
+  portrait: "artists/lDespont.jpg",
+  image:  "art/art_lDespont.jpg",
+  url: "https://example.com/",
+content: "Louise Despont draws incredibly detailed, intricate patterns by hand on old paper — sometimes antique ledger pages with faint lines still showing through. Her drawings look almost like maps of imaginary worlds, or windows into something cosmic and mysterious. She works slowly and carefully, and the results feel meditative, like they hold a kind of quiet energy."
+},
+{
+  id: 13, 
+  artist: "Leonardo Drew",
+  portrait: "artists/lDrew.jpg",
+  image:  "art/art_lDrew.jpg",
+  url: "https://example.com/",
+content: "Leonardo Drew makes large-scale sculptures from raw, weathered materials — wood, cotton, rust, dirt — that he arranges into grid-like compositions that cover entire walls. His work deals with time and transformation, showing how things decay and change. Up close you see every detail; from far away it becomes something abstract and vast, like a landscape or a living organism."},
+{
+  id: 14, 
+  artist: "Marela Zacarias",
+  portrait: "artists/mZacarias.jpg",
+  image:  "art/art_mZacarias.jpg",
+  url: "https://example.com/",
+content: "Marela Zacarias makes large, bold paintings and murals full of interlocking geometric shapes and vibrant color. Born in Mexico, she's influenced by folk art traditions, textiles, and the way patterns carry cultural meaning across generations. Her work often covers entire walls and feels celebratory — like color itself is having a conversation."},
+{
+  id: 15, 
+  artist: "Mark Bradford",
+  portrait: "artists/mBradford.jpg",
+  image:  "art/art_mBradford.jpg",
+  url: "https://example.com/",
+content: "Mark Bradford grew up helping in his mother's hair salon in Los Angeles, and those early experiences — layering, peeling, cutting — show up in his art. He builds up his paintings using materials like paper, rope, and billboard fragments, then sands and tears them back. The result looks like aerial maps of cities. His work connects art to questions about race, community, and urban life in America."},
+{
+  id: 16, 
+  artist: "Maya Lin",
+  portrait: "artists/mLin.jpg",
+  image:  "art/art_mLin.jpg",
+  url: "https://example.com/",
+content: "Maya Lin is an architect and artist who is most famous for designing the Vietnam Veterans Memorial in Washington D.C. — which she won a competition for when she was just a 21-year-old college student. The memorial is a long black granite wall with the names of fallen soldiers carved into it. People can see their own reflection in it as they read the names. Her work always thinks carefully about land, memory, and how spaces make us feel."
+},
+{
+  id: 17, 
+  artist: "Mary Mattingly",
+  portrait: "artists/mMattingly.jpg",
+  image:  "art/art_mMattingly.jpg",
+  url: "https://example.com/",
+content: "Mary Mattingly makes art about how humans survive — and what we might need to do differently to take care of the planet. She builds wearable backpack sculptures packed with everything a person needs to live, and has created floating habitats on water. Her projects often involve communities working together, and they ask real questions: What do we actually need? What are we willing to share?"},
+{
+  id: 18, 
+  artist: "Mika Rottenberg",
+  portrait: "artists/mRottenberg.jpg",
+  image:  "art/art_mRottenberg.jpeg",
+  url: "https://example.com/",
+content: "Mika Rottenberg makes video art and installations that are funny, strange, and a little bit uncomfortable all at once. Her work often shows workers in absurd, dreamlike factories doing repetitive tasks — growing fingernails, making cheese, producing pearls — in ways that exaggerate how weird global manufacturing actually is. Her art makes you laugh, then makes you think."},
+{
+  id: 19, 
+  artist: "Monica Valentine",
+  portrait: "artists/mValentine.jpg",
+  image:  "art/art_mValentine.jpg",
+  url: "https://example.com/",
+content: "Monica Valentine is an artist at Creative Growth Art Center in Oakland. Her colorful, joyful drawings are full of figures, patterns, and scenes from daily life, rendered in her own completely distinct visual language. Monica has exhibited widely, and her work is celebrated for its energy, specificity, and warmth. Creative Growth supports artists with developmental disabilities in developing their practice fully and professionally."
+},
+{
+  id: 20, 
+  artist: "Nick Cave",
+  portrait: "artists/nCave.jpg",
+  image:  "art/art_nCave.jpg",
+  url: "https://example.com/",
+content: "Nick Cave is an artist known for his Soundsuits — full-body sculptures made from found materials like twigs, buttons, beads, and toys that completely cover the person wearing them. Originally made in response to the beating of Rodney King, they hide the wearer's race, gender, and age. When they move, they make sound. They're about protection, identity, and transformation all at once."},
+{
+  id: 21, 
+  artist: "Oliver Herring",
+  portrait: "artists/oHerring.jpg",
+  image:  "art/art_oHerring.jpg",
+  url: "https://example.com/",
+content: "Oliver Herring is known for creating TASK parties — events where anyone can show up and participate. A roll of paper sits in the middle of the room with instructions written on it, and participants complete tasks, then write new ones for others. Tasks can be silly, strange, thoughtful, or surprising. The whole event becomes a living artwork made by everyone together, and no two TASK parties are ever the same."},
+{
+  id: 22, 
+  artist: "Pedro Reyes",
+  portrait: "artists/pReyes.jpg",
+  image:  "art/art_pReyes.jpg",
+  url: "https://example.com/",
+content: "Pedro Reyes is a Mexican artist who turns serious problems into playful — but meaningful — art. He's melted down confiscated guns and turned them into musical instruments. He's created puppet shows about economics and therapy sessions as performance art. His work believes that creativity and imagination are tools for actually solving problems in the world, not just talking about them."},
+{
+  id: 23, 
+  artist: "Robin Rhode",
+  portrait: "artists/rRhode.jpg",
+  image:  "art/art_rRhode.jpeg",
+  url: "https://example.com/",
+content: "Robin Rhode grew up in South Africa and makes work that is part drawing, part performance, and part photography. He draws simple images on walls — a bicycle, a piano, a basketball hoop — and then photographs himself interacting with them as if they were real. The results are playful and poetic, exploring dreams, freedom, and the power of imagination in everyday spaces."},
+{
+  id: 24, 
+  artist: "Sarah Sze",
+  portrait: "artists/sSze.jpg",
+  image:  "art/art_sSze.jpg",
+  url: "https://example.com/",
+content: "Sarah Sze makes sculptures and installations from hundreds of tiny everyday objects — string, tape, photos, plants, fans, ladders, water — arranged into elaborate structures that look like they might be mapping something or about to take off. Her work plays with scale, time, and attention. Standing near one of her installations, it's almost impossible to take it all in at once, which is exactly the point."},
+{
+  id: 25, 
+  artist: "Dan Miller",
+  portrait: "artists/dMiller.png",
+  image:  "art/art_dMiller.jpg",
+  url: "https://example.com/",
+content: "Dan Miller is an artist at Creative Growth Art Center in Oakland, California, a studio for artists with developmental disabilities. Dan covers his canvases and paper with dense layers of words, numbers, and marks that overlap until they become something completely new — almost like music you can see. His work has been shown in museums and galleries around the world."},
+{
+  id: 26, 
+  artist: "Theaster Gates",
+  portrait: "artists/tGates.jpg",
+  image:  "art/art_tGates.jpg",
+  url: "https://example.com/",
+content: "Theaster Gates is an artist from Chicago who believes that art can rebuild communities. He buys abandoned buildings on the South Side of Chicago and transforms them into cultural spaces — archives, music venues, gathering places — for the people who live there. His sculptures and installations often use materials salvaged from those same buildings, so the history of the place becomes part of the art itself."
+},{
+  id: 27, 
+  artist: "Wangechi Mutu",
+  portrait: "artists/wMutu.jpg",
+  image:  "art/art_wMutu.jpg",
+  url: "https://example.com/",
+content: "Wangechi Mutu is a Kenyan artist who makes collages, sculptures, and films featuring powerful figures that are part human, part animal, part machine, part plant. Her work draws from African traditions, science fiction, and fashion imagery, and centers on the female body and its relationship to land, nature, and power. Her figures feel mythological — like they come from a world with its own rules and its own beauty."},
+];
